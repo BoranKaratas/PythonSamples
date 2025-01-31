@@ -1,6 +1,7 @@
 from pymongo import MongoClient
+from app.config import MONGO_URI
 
-client = MongoClient('mongodb://localhost:27017/')
+client = MongoClient(MONGO_URI)
 db = client['bokaDB']
 
 class User:
