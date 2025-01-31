@@ -1,9 +1,9 @@
-from flask import Flask
 import os
+from app import create_app
 
-app = Flask(__name__)
+app = create_app()
 
-@app.route("/")
+@app.route("/", methods=['POST'])
 def home():
     return "Hello, Render!"
 
