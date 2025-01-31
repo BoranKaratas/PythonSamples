@@ -5,7 +5,7 @@ app = create_app()
 
 @app.route("/", methods=['POST'])
 def home():
-    return "Hello, Render!"
+    return "Merhaba. Server ayakta!"
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
